@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>express simple form</title>
+</head>
+<body>
+    <h1>welcome to myexpress simple form</h1>
+    <form action="POST/students/add">
+        <button type="submit">Add</button>
+    </form>
+
+    <ul>
+        {{#each students }}
+             <li>{{{this}}}</li>
+        {{/each}}
+        {{!-- <li>Emad</li>
+        <li>Ibrahim</li>
+        <li>musa</li> --}}
+    </ul>
+</body>
+</html>
